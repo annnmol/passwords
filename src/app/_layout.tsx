@@ -1,5 +1,10 @@
 import { Stack } from "expo-router";
+import GlobalProviders from "../store/context/providers";
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <GlobalProviders>
+      <Stack />
+    </GlobalProviders>
+  );
 }

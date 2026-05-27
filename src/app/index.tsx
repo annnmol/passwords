@@ -1,11 +1,18 @@
-import OutlinedTextFieldExample from "@/components/textinput";
 import { StyleSheet, Text, View } from "react-native";
+import AppButton from "../components/ui/button";
+import AppText from "../components/ui/text";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <OutlinedTextFieldExample />
       <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <AppText variant="title" style={{ marginTop: 20 }}>
+        Hello World
+      </AppText>
+      <AppText variant="defaultSemiBold" style={{ marginTop: 10 }}>
+        Welcome to Expo Router with TypeScript and Tailwind CSS!
+      </AppText>
+      <AppButton variant="outline">ddd</AppButton>
     </View>
   );
 }
